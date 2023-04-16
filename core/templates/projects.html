@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Start Bradcaump area -->
+<h2 class="text-center">CERTIFICATES</h2>
+<!-- End Bradcaump area -->
+<!-- Start Latest Project Area -->
+<div class="htc__latest__project__area pb--150 ptb--120 bg__white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-lg-6 hidden-sm col-xs-12">
+                <img src="/media/REG I-1.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 col-lg-6 hidden-sm col-xs-12">
+                <img src="/media/REG II-1.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 col-lg-6 hidden-sm col-xs-12">
+                <img src="/media/REG III-1.webp" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Brand Area -->
+{% include 'newsletter.html' %}
+<!-- Start Contact Address -->
+{% include 'contact_template.html' %}
+<!-- End Contact Address -->
+
+{% endblock  %}

@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url('{% static "images/bg/5.jpg" %}') no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">CONTACT</h2>
+                        <nav class="bradcaump-inner">
+                          <a class="breadcrumb-item" href="{% url 'home' %}">Home</a>
+                          <span class="brd-separetor">-</span>
+                          <span class="breadcrumb-item active">Contact</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Contact Address -->
+<section class="htc__contact__area bg__white ptb--150">
+    <div class="container">
+        <div class="row pb--100">
+            <div class="col-md-12">
+                <div class="htc__contact__inner">
+                    <h2 class="title__line--5">CONTACT INFORMATION</h2>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demoralized On the er hand, we denounce with pain and trouble that are bound to ensue; and equal blame belongs to those </p>
+                </div>
+                <div class="htc__address__container">
+                    <!-- Start Single Address -->
+                    <div class="ct__address">
+                        <div class="ct__address__icon">
+                            <i class="zmdi zmdi-pin"></i>
+                        </div>
+                        <div class="ct__details">
+                            <p>Nyerere Road, Uhuru Street <br>Geita, P.O. Box 318, Tanzania</p>
+                        </div>
+                    </div>
+                    <!-- End Single Address -->
+                    <!-- Start Single Address -->
+                    <div class="ct__address">
+                        <div class="ct__address__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="ct__details">
+                            <p><a href="#">(255) 752 985 776</a></p>
+                            <p><a href="#">(255) 716 826 500</a></p>
+                        </div>
+                    </div>
+                    <!-- End Single Address -->
+                    <!-- Start Single Address -->
+                    <div class="ct__address">
+                        <div class="ct__address__icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="ct__details">
+                            <p><a href="#">maskadcoltd@gmail.com</a></p>
+                            <p><a href="#">www.maskadltd.com</a></p>
+                        </div>
+                    </div>
+                    <!-- End Single Address -->
+                </div>
+            </div>
+        </div>
+ 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="htc__contact__form__wrap">
+                    <h2 class="title__line--5">SEND US A MESSAGE</h2>
+                    <div class="contact-form-wrap">
+                        <form id="contact-form" action="#" method="post">
+                            {% csrf_token %}
+                            <div class="single-contact-inner">
+                                <div class="single-contact-form">
+                                    <div class="contact-box name">
+                                        <span>Your Name*</span>
+                                        <input type="text" name="name">
+                                    </div>
+                                    <div class="contact-box email">
+                                        <span>Your Email*</span>
+                                        <input type="email" name="email">
+                                    </div>
+                                    <div class="contact-box email">
+                                        <span>Your Phone*</span>
+                                        <input type="tel" name="phone">
+                                    </div>
+                                    <div class="contact-box subject">
+                                        <span>Subject*</span>
+                                        <input type="text" name="subject">
+                                    </div>
+                                </div>
+                                <div class="single-contact-form">
+                                    <div class="contact-box message">
+                                        <span>Message*</span>
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                    <div class="contact-btn">
+                                        <button type="submit" class="htc__btn btn--theme">SEND NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                                                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Brand Area -->
+{% include 'newsletter.html' %}
+<!-- Start Contact Address -->
+{% include 'contact_template.html' %}
+<!-- End Contact Address -->
+
+{% endblock  %}

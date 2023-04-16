@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url('{% static 'images/bg/5.jpg' %}') no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">About Us</h2>
+                        <nav class="bradcaump-inner">
+                          <a class="breadcrumb-item" href="{% url 'home' %}">Home</a>
+                          <span class="brd-separetor">-</span>
+                          <span class="breadcrumb-item active">About Us</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Construction Area -->
+
+<!-- End Construction Area -->
+<!-- Start Offer Area -->
+<section class="htc__mission__area bg__gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-lg-5 col-sm-7 col-xs-12">
+                <div class="htc__mission__container">
+                    <div class="single__mission">
+                        <h2>ABOUT MASKAD COMPANY LIMITED</h2>
+                        <p style="text-align: justify;">Is a Tanzanian and locally owned company registered by Business registration and Licensing Agency and Constructors Registration Board (CRB) as a Company Dealing with Civil Engineering and Information/Communication Technology with registration numbers C6/2556/11/2022 (CIVIL WORKS CONTRACTOR), SPC2/260/11/2022 (SPECIALIST CIVIL WORKS CONTRACTOR) and B6/1626/11/2022 (BUILDING WORKS CONTRACTOR).</p><br>
+                        <p style="text-align: justify;">Maskad Company was established in January 2022, with four key participants for the General Purpose of offering Engineering Construction and Construction Project management in Geita Region and Tanzania in general. Therefore Maskad Company Limited is dedicated to organizations or Individuals seeking construction services and Information and Communication Technology services.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="htc__offer__thumb">
+        <div class="htc__offer__thumb__inner">
+            <img src="/media/excavator-g37a2b7efb_1280.jpg" alt="offer img">
+        </div>
+    </div>
+</section>
+<!-- End Offer Area -->
+<!-- Start Offer Area -->
+
+<!-- End Offer Area -->
+<!-- Start Team Area -->
+
+<!-- End Team Area -->
+<!-- Start Testimonial Area -->
+<section class="htc__testimonial__area ptb--130" data--gray__overlay="9.5" style="background: rgba(0, 0, 0, 0) url('{% static 'images/bg/1.jpg' %}') no-repeat fixed center center / cover ;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
+                <img src="{% static 'images/about/4.png' %}" alt="images">
+            </div>
+            <div class="col-md-6 col-lg-6  col-lg-offset-1 col-sm-12 col-xs-12 smt-40">
+                <div class="reguest__quote">
+                    <div class="section__title text-left">
+                        <h2 class="title__line">REQUEST A <span class="text--theme">QUOTE</span></h2>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasur</p>
+                    </div>
+                    <form id="contact-form" action="." method="post">
+                        {% csrf_token %}
+                        <div class="clint__comment__form">
+                            <div class="single__cl__form">
+                                <input name="name" type="text" placeholder="Name">
+                                <input name="email" type="email" placeholder="Email">
+                            </div>
+                            <div class="single__cl__form">
+                                <input name="phone" type="tel" placeholder="Phone">
+                                <input name="subject" type="text" placeholder="Subject">
+                            </div>
+                            <div class="single__cl__message">
+                                <textarea name="message" placeholder="Massage"></textarea>
+                            </div>
+                            <div class="clint__submit__btn">
+                                <button class="submit htc__btn" type="submit">
+                                    SEND MESSAGE 
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Testimonial Area -->
+<!-- Start Counter Up Area -->
+<!--  -->
+<!-- End Counter Up Area -->
+<!-- Start Brand Area -->
+<!-- <div class="htc__brand__area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="brand__list">
+                    <li><a href="#"><img src="{% static 'images/brand/1.jpg' %}" alt="brand images"></a></li>
+                    <li><a href="#"><img src="{% static 'images/brand/2.jpg' %}" alt="brand images"></a></li>
+                    <li><a href="#"><img src="{% static 'images/brand/3.jpg' %}" alt="brand images"></a></li>
+                    <li><a href="#"><img src="{% static 'images/brand/4.jpg' %}" alt="brand images"></a></li>
+                    <li><a href="#"><img src="{% static 'images/brand/5.jpg' %}" alt="brand images"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- End Brand Area -->
+{% include 'newsletter.html' %}
+<!-- Start Contact Address -->
+{% include 'contact_template.html' %}
+<!-- End Contact Address -->
+
+
+{% endblock  %}
